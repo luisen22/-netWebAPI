@@ -11,4 +11,4 @@ FROM microsoft/dotnet:aspnetcore-runtime AS runtime
 EXPOSE 5555
 WORKDIR /app
 COPY --from=build /app/publishdir .
-ENTRYPOINT ["dotnet", "WebAppContainer.dll"]
+ENTRYPOINT ["dotnet", "TodoApi.dll"]
